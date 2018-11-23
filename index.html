@@ -1,23 +1,50 @@
----
-layout: default
----
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Página personal de José Redondo Hurtado</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav">
+	<h3>Enlaces</h2>
+<ul>
+  <li><a href="./academic.html" target="_self">Experiencia académica</a></li>
+  <li><a href="./interest.html" target="_self">Intereses</a></li>
+    <li><a href="./index.html" target="_self">Sobre mí</a></li>
+</ul>
+</div>
+<div class="main">
+  <h1>José Redondo Hurtado</h1>
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+  <description>
+    <part>
+      <h2>De dónde vengo.</h2>
+      <p>Nací en un pueblecito de Jaén llamado Torreperogil hace ya muchos años. Y allí entre olivos me crié..</p>
+    </part>
+    <part>
+      <h2>Dónde estoy.</h2>
+      <p>Ya llevo casi la mitad de mi vida en Madrid, mi ciudad adoptiva desde que me acogió con 18 añitos.</p>
+    </part>
+    <part>
+      <h2>A dónde voy.</h2>
+      <p>El mundo del blockchain está lleno de oportunidades y no sé dónde me llevará, pero ¡ardo en deseos de empezar el camino!</p>
+    </part>
+  </description>
+</div>
+<div class="aside">
+  <img src="img/jose.jpg" alt="José Redondo Hurtado" id="jose" />
+  <footer>
+  <ul>
+    <li><a href="http://github.com/jredondoh" target="_blank"><img src="img/github.png" alt="GitHub"/></a></li>
+    <li><a href="http://linkedin.com/in/josé-redondo-hurtado-7b27145" target="_blank"><img src="img/linkedin.png" alt="LinkedIn"/></a></li>
+    <li><a href="mailto:jredondoh@gmail.com" target="_blank"><img src="img/mail.png" alt="Mail"/></a></li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </footer>
 
 </div>
+</div>
+
+</body>
+</html>
